@@ -5,6 +5,52 @@
 document.addEventListener('DOMContentLoaded', () => {
   console.log('🚀 Portfolio Loading...');
 
+  // ===== CUSTOM CURSOR =====
+  const initCustomCursor = () => {
+    const cursor = document.getElementById('cursor');
+    const cursorFollower = document.getElementById('cursorFollower');
+
+    document.addEventListener('mousemove', (e) => {
+      cursor.style.left = e.clientX - 10 + 'px';
+      cursor.style.top = e.clientY - 10 + 'px';
+
+      setTimeout(() => {
+        cursorFollower.style.left = e.clientX - 20 + 'px';
+        cursorFollower.style.top = e.clientY - 20 + 'px';
+      }, 50);
+    });
+
+    document.addEventListener('mouseenter', () => {
+      cursor.style.opacity = '1';
+      cursorFollower.style.opacity = '1';
+    });
+
+    document.addEventListener('mouseleave', () => {
+      cursor.style.opacity = '0';
+      cursorFollower.style.opacity = '0';
+    });
+  };
+
+  // ===== BACK TO TOP BUTTON =====
+  const initBackToTop = () => {
+    const backToTopBtn = document.getElementById('backToTop');
+
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 300) {
+        backToTopBtn.classList.add('show');
+      } else {
+        backToTopBtn.classList.remove('show');
+      }
+    });
+
+    backToTopBtn.addEventListener('click', () => {
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth',
+      });
+    });
+  };
+
   // ===== THEME TOGGLE =====
   const initTheme = () => {
     const themeBtn = document.getElementById('themeBtn');
@@ -197,6 +243,8 @@ document.addEventListener('DOMContentLoaded', () => {
   };
 
   // ===== INITIALIZE ALL =====
+  initCustomCursor();
+  initBackToTop();
   initTheme();
   addAnimations();
   initPageLoad();
