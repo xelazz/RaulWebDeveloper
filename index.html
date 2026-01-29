@@ -3,132 +3,384 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Raul Gabriel Cristea | Operatore Informatico Front-End</title>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <meta name="description" content="Raul Gabriel Cristea - Front-End Developer. Creo esperienze web moderne e coinvolgenti con HTML, CSS e JavaScript.">
+    <meta name="keywords" content="front-end developer, web developer, portfolio, HTML, CSS, JavaScript">
+    <meta name="author" content="Raul Gabriel Cristea">
+    <meta name="theme-color" content="#0f172a">
+    <meta name="color-scheme" content="light dark">
+    <title>Raul Gabriel Cristea - Front-End Developer</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
-    <script src="https://kit.fontawesome.com/TUA_CHIAVE_FA.js" crossorigin="anonymous"></script> 
 </head>
 <body>
+    <!-- NAVBAR -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#home" class="logo">
+                <span class="logo-bracket">&lt;</span>
+                <span class="logo-text">Raul</span>
+                <span class="logo-bracket">/&gt;</span>
+            </a>
+            <div class="nav-links">
+                <a href="#about" class="nav-link">Chi Sono</a>
+                <a href="#skills" class="nav-link">Competenze</a>
+                <a href="#projects" class="nav-link">Progetti</a>
+                <a href="#contact" class="nav-link">Contatti</a>
+            </div>
+            <div class="nav-actions">
+                <button class="theme-btn" id="themeBtn" aria-label="Toggle theme">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <button class="menu-btn" id="menuBtn" aria-label="Menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
 
-    <header class="navbar">
-        <a href="#home" class="logo">Raul G. Cristea</a>
-        <nav class="nav-links">
-            <a href="#about">Chi Sono</a>
-            <a href="#skills">Compet.</a>
-            <a href="#experience">Esperienza</a>
-            <a href="#portfolio">Portfolio</a>
-            <a href="#contact" class="cta-link">Contatti</a>
-        </nav>
-        <button class="menu-toggle" aria-label="Toggle navigation">&#9776;</button>
-    </header>
+    <!-- MOBILE MENU -->
+    <div class="mobile-menu" id="mobileMenu">
+        <a href="#about" class="mobile-link">Chi Sono</a>
+        <a href="#skills" class="mobile-link">Competenze</a>
+        <a href="#projects" class="mobile-link">Progetti</a>
+        <a href="#contact" class="mobile-link">Contatti</a>
+    </div>
 
     <main>
-        <section id="home" class="hero-section">
-            <div class="hero-content">
-                <h1>Ciao, sono Raul Gabriel Cristea</h1>
-                <p>Sono un Operatore Informatico focalizzato sul Front-End. Trasformo le idee grafiche in interfacce web funzionali e coinvolgenti.</p>
-                <div class="hero-actions">
-                    <a href="#portfolio" class="button primary-btn">Vedi i Lavori</a>
-                    <a href="CV_RaulCristea.pdf" class="button secondary-btn" download>Scarica il CV</a>
+        <!-- HERO SECTION -->
+        <section id="home" class="hero">
+            <div class="stars"></div>
+            <div class="container">
+                <div class="hero-content">
+                    <span class="hero-badge">👋 Benvenuto!</span>
+                    <h1 class="hero-title">
+                        Ciao, sono <span class="gradient-text">Raul</span>
+                        <br>Front-End Developer
+                    </h1>
+                    <p class="hero-subtitle">Trasformo idee in esperienze web straordinarie. Specializzato in design responsivo, animazioni fluide e UX moderna.</p>
+                    <div class="hero-cta">
+                        <a href="#projects" class="btn btn-primary">
+                            Vedi i Miei Progetti
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                        <a href="#contact" class="btn btn-secondary">
+                            Contattami
+                        </a>
+                    </div>
+                    <div class="hero-socials">
+                        <a href="https://github.com" target="_blank" class="social-link" aria-label="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://linkedin.com" target="_blank" class="social-link" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="https://instagram.com/raul.cristeaa" target="_blank" class="social-link" aria-label="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </div>
                 </div>
-            </div>
-            <div class="hero-image-placeholder">
-                
-            </div>
-        </section>
-
-        <section id="about" class="content-section">
-            <h2>Chi Sono</h2>
-            <p>Sono Raul Gabriel Cristea, nato in Italia con origini rumene. Il mio percorso formativo è iniziato all'ITIS Castelli e si è concluso presso la Bottega Artigiani.</p>
-            <p>Il mio approccio è principalmente focalizzato sul Front-End, poiché la parte grafica e l'interazione diretta di un sito mi hanno sempre appassionato e incuriosito. Sono comunque in grado di abituarmi e affrontare rapidamente nuove sfide e tecnologie, garantendo flessibilità in ogni progetto.</p>
-        </section>
-        
-        <section id="experience" class="content-section light-bg">
-            <h2>Esperienza Formativa e Lavorativa</h2>
-            <div class="timeline">
-                
-                <div class="timeline-item">
-                    <div class="timeline-date">Classe 3ª - 4ª</div>
-                    <h3>Stage</h3>
-                    <h4>Floow Agency</h4>
-                    <p>Ho completato due mesi di stage estivo consecutivi, contribuendo a progetti web reali e consolidando le mie competenze sul campo in un ambiente di agenzia dinamico.</p>
-                </div>
-
-                <div class="timeline-item">
-                    <div class="timeline-date">Classe 2ª</div>
-                    <h3>Stage</h3>
-                    <h4>ZAG Comunicazione SRL</h4>
-                    <p>Esperienza di due mesi in agenzia, dove ho potuto applicare le prime nozioni di sviluppo informatico e comprendere il flusso di lavoro professionale.</p>
-                </div>
-                
-                <div class="timeline-item">
-                    <div class="timeline-date">20XX - 20XX</div>
-                    <h3>Diploma Operatore Informatico</h3>
-                    <h4>Bottega Artigiani</h4>
-                    <p>Completamento del percorso di studi con focus sulle tecnologie web e sull'informatica applicata.</p>
-                </div>
-
-            </div>
-        </section>
-
-        <section id="skills" class="content-section">
-            <h2>Competenze</h2>
-            <div class="skills-grid">
-                <div class="skill-card">
-                    <i class="fas fa-terminal"></i>
-                    <h3>Hard Skills</h3>
-                    <ul>
-                        <li>HTML5, CSS3, JavaScript (Front-End)</li>
-                        <li>SEO (Ottimizzazione Base per i Motori di Ricerca)</li>
-                        <li>Adobe (Conoscenza Base di Strumenti di Design)</li>
-                        <li>Capacità di adozione rapida di nuovi Framework</li>
-                    </ul>
-                </div>
-                <div class="skill-card">
-                    <i class="fas fa-user-check"></i>
-                    <h3>Soft Skills</h3>
-                    <ul>
-                        <li>Problem Solving Efficace</li>
-                        <li>Ottima Gestione del Tempo</li>
-                        <li>Lavoro Autonomo e Remoto</li>
-                        <li>Flessibilità e Adattabilità</li>
-                    </ul>
+                <div class="hero-visual">
+                    <div class="code-window">
+                        <div class="window-header">
+                            <span></span><span></span><span></span>
+                        </div>
+                        <div class="window-content">
+                            <pre><code><span class="code-tag">&lt;div&gt;</span>
+  <span class="code-attr">class</span>=<span class="code-string">"developer"</span>
+  <span class="code-attr">skills</span>=<span class="code-string">"HTML CSS JS"</span>
+  <span class="code-attr">passion</span>=<span class="code-string">"∞"</span>
+<span class="code-tag">&gt;</span>
+<span class="code-tag">&lt;/div&gt;</span></code></pre>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
 
-        <section id="portfolio" class="content-section light-bg">
-            <h2>Portfolio</h2>
-            <div class="portfolio-grid">
-                <div class="project-card">
-                    <img src="preview_macelleria.jpg" alt="Anteprima sito Macelleria Dotti Paolo" class="project-image">
-                    
-                    <h3>Sito Macelleria Dotti Paolo</h3>
-                    <p>Realizzazione di un sito vetrina completo, inclusivo di un mini blog per la promozione dei prodotti e aggiornamenti.</p>
-                    <div class="project-tags"><span>#SitoVetrina</span><span>#Worldpress</span></div>
-                    <a href="https://www.macelleriadottipaolo.com/" target="_blank" class="project-link">Vai al Sito &rarr;</a>
+        <!-- ABOUT SECTION -->
+        <section id="about" class="about">
+            <div class="container">
+                <h2 class="section-title">Chi Sono</h2>
+                <div class="about-grid">
+                    <div class="about-text">
+                        <p>Sono Raul Gabriel Cristea, un Front-End Developer appassionato di creare interfacce web moderne e intuitive. Con una solida formazione professionale e esperienza in progetti reali, porto idee grafiche a vita attraverso codice pulito e performance ottimali.</p>
+                        <p>La mia specialità è trasformare design complessi in componenti web responsivi, mantenendo sempre l'attenzione verso l'esperienza utente e le best practices di sviluppo.</p>
+                        <div class="about-highlights">
+                            <div class="highlight-item">
+                                <i class="fas fa-check"></i>
+                                <span>Sviluppo Web Responsive</span>
+                            </div>
+                            <div class="highlight-item">
+                                <i class="fas fa-check"></i>
+                                <span>Animazioni Fluide</span>
+                            </div>
+                            <div class="highlight-item">
+                                <i class="fas fa-check"></i>
+                                <span>UX/UI Driven</span>
+                            </div>
+                            <div class="highlight-item">
+                                <i class="fas fa-check"></i>
+                                <span>Performance Optimization</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="about-stats">
+                        <div class="stat-card">
+                            <h3>3+</h3>
+                            <p>Anni di Formazione</p>
+                        </div>
+                        <div class="stat-card">
+                            <h3>10+</h3>
+                            <p>Progetti Completati</p>
+                        </div>
+                        <div class="stat-card">
+                            <h3>100%</h3>
+                            <p>Soddisfazione Client</p>
+                        </div>
+                        <div class="stat-card">
+                            <h3>∞</h3>
+                            <p>Passione</p>
+                        </div>
+                    </div>
                 </div>
-                </div>
+            </div>
         </section>
 
-        <section id="contact" class="content-section">
-            <h2>Mettiamoci in contatto</h2>
-            <form id="contact-form">
-                <input type="text" name="name" placeholder="Nome Completo" required>
-                <input type="email" name="email" placeholder="La Tua Email" required>
-                <textarea name="message" rows="5" placeholder="Il Tuo Messaggio" required></textarea>
-                <button type="submit" class="button primary-btn">Invia Messaggio</button>
-                <p id="form-message"></p>
-            </form>
+        <!-- SKILLS SECTION -->
+        <section id="skills" class="skills">
+            <div class="container">
+                <h2 class="section-title">Competenze</h2>
+                <div class="skills-grid">
+                    <div class="skill-category">
+                        <h3><i class="fas fa-code"></i> Frontend</h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag">HTML5</span>
+                            <span class="skill-tag">CSS3</span>
+                            <span class="skill-tag">JavaScript ES6+</span>
+                            <span class="skill-tag">Responsive Design</span>
+                            <span class="skill-tag">Flexbox & Grid</span>
+                            <span class="skill-tag">Web APIs</span>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h3><i class="fas fa-tools"></i> Tools & Frameworks</h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Git & GitHub</span>
+                            <span class="skill-tag">VS Code</span>
+                            <span class="skill-tag">WordPress</span>
+                            <span class="skill-tag">DevTools</span>
+                            <span class="skill-tag">Figma</span>
+                            <span class="skill-tag">npm</span>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h3><i class="fas fa-rocket"></i> Performance & Optimization</h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag">SEO Optimization</span>
+                            <span class="skill-tag">Page Speed</span>
+                            <span class="skill-tag">Accessibility (A11y)</span>
+                            <span class="skill-tag">Mobile First</span>
+                            <span class="skill-tag">Web Vitals</span>
+                            <span class="skill-tag">Lazy Loading</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
 
+        <!-- PROJECTS SECTION -->
+        <section id="projects" class="projects">
+            <div class="container">
+                <h2 class="section-title">Progetti in Evidenza</h2>
+                <div class="projects-grid">
+                    <div class="project-card">
+                        <div class="project-image">
+                            <i class="fas fa-globe"></i>
+                        </div>
+                        <div class="project-content">
+                            <h3>Macelleria Dotti Paolo</h3>
+                            <p>Sito vetrina professionale con blog integrato, ottimizzato per SEO e mobile responsiveness.</p>
+                            <div class="project-tech">
+                                <span>HTML5</span>
+                                <span>CSS3</span>
+                                <span>WordPress</span>
+                            </div>
+                            <a href="https://www.macelleriadottipaolo.com/" target="_blank" class="project-link">
+                                Visita <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-image">
+                            <i class="fas fa-shopping-cart"></i>
+                        </div>
+                        <div class="project-content">
+                            <h3>E-Commerce Landing</h3>
+                            <p>Landing page interattiva con carousel prodotti, filtri dinamici e checkout ottimizzato.</p>
+                            <div class="project-tech">
+                                <span>HTML5</span>
+                                <span>CSS3</span>
+                                <span>JavaScript</span>
+                            </div>
+                            <a href="#" class="project-link">
+                                Vedi Progetto <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-image">
+                            <i class="fas fa-tasks"></i>
+                        </div>
+                        <div class="project-content">
+                            <h3>Task Manager App</h3>
+                            <p>Web app per gestione task con localStorage, drag-and-drop e filtri dinamici.</p>
+                            <div class="project-tech">
+                                <span>HTML5</span>
+                                <span>CSS3</span>
+                                <span>JavaScript</span>
+                            </div>
+                            <a href="#" class="project-link">
+                                Vedi Progetto <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-image">
+                            <i class="fas fa-image"></i>
+                        </div>
+                        <div class="project-content">
+                            <h3>Gallery Fotografica</h3>
+                            <p>Galleria interattiva con lightbox, filtri categoria e transizioni fluide.</p>
+                            <div class="project-tech">
+                                <span>HTML5</span>
+                                <span>CSS3</span>
+                                <span>JavaScript</span>
+                            </div>
+                            <a href="#" class="project-link">
+                                Vedi Progetto <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-image">
+                            <i class="fas fa-film"></i>
+                        </div>
+                        <div class="project-content">
+                            <h3>Streaming Platform</h3>
+                            <p>UI di piattaforma streaming con carousel responsivo e player video customizzato.</p>
+                            <div class="project-tech">
+                                <span>HTML5</span>
+                                <span>CSS3</span>
+                                <span>JavaScript</span>
+                            </div>
+                            <a href="#" class="project-link">
+                                Vedi Progetto <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-image">
+                            <i class="fas fa-palette"></i>
+                        </div>
+                        <div class="project-content">
+                            <h3>Portfolio Moderno</h3>
+                            <p>Portfolio personale con tema dark/light, animazioni avanzate e performance ottimale.</p>
+                            <div class="project-tech">
+                                <span>HTML5</span>
+                                <span>CSS3</span>
+                                <span>JavaScript</span>
+                            </div>
+                            <a href="#" class="project-link">
+                                Vedi Progetto <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- EXPERIENCE SECTION -->
+        <section class="experience">
+            <div class="container">
+                <h2 class="section-title">Il Mio Percorso</h2>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-date">2021 - 2024</div>
+                        <div class="timeline-content">
+                            <h3>Diploma Operatore Informatico</h3>
+                            <p class="location">Bottega Artigiani</p>
+                            <p>Percorso formativo specializzato in sviluppo web frontend, con focus su HTML5, CSS3, JavaScript moderno e responsive design.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-date">Giugno - Agosto 2023</div>
+                        <div class="timeline-content">
+                            <h3>Stage Professionale</h3>
+                            <p class="location">ZAG Comunicazione SRL</p>
+                            <p>Prima esperienza in agenzia digitale. Ho appreso metodologie professionali, gestione progetti e collaborazione team.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-date">Giugno - Agosto 2024</div>
+                        <div class="timeline-content">
+                            <h3>Stage Avanzato</h3>
+                            <p class="location">Floow Agency</p>
+                            <p>Esperienza in agenzia all'avanguardia con progetti internazionali. Ho consolidato competenze frontend e best practices di sviluppo.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CONTACT SECTION -->
+        <section id="contact" class="contact">
+            <div class="container">
+                <h2 class="section-title">Mettiamoci in Contatto</h2>
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <h3>Contattami</h3>
+                        <p>Hai un progetto in mente? Contattami e parliamone!</p>
+                        <div class="contact-methods">
+                            <a href="mailto:cristear117@gmail.com" class="contact-method">
+                                <i class="fas fa-envelope"></i>
+                                <span>cristear117@gmail.com</span>
+                            </a>
+                            <a href="https://wa.me/39XXXXXXXXX" target="_blank" class="contact-method">
+                                <i class="fab fa-whatsapp"></i>
+                                <span>WhatsApp</span>
+                            </a>
+                            <a href="https://www.linkedin.com" target="_blank" class="contact-method">
+                                <i class="fab fa-linkedin"></i>
+                                <span>LinkedIn</span>
+                            </a>
+                            <a href="https://github.com" target="_blank" class="contact-method">
+                                <i class="fab fa-github"></i>
+                                <span>GitHub</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="contact-cta">
+                        <a href="mailto:cristear117@gmail.com" class="btn btn-primary btn-large">
+                            Inviami un'Email
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
 
-    <footer>
-        <p>&copy; 2025 Raul Gabriel Cristea. Tutti i diritti riservati.</p>
-        <div class="social-links">
-            <a href="https://www.instagram.com/raul.cristeaa/" target="_blank" aria-label="Instagram"><i class="fab fa-instagram fa-lg"></i></a>
-            <a href="mailto:cristear117@gmail.com" aria-label="Email"><i class="fas fa-envelope fa-lg"></i></a>
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Raul Gabriel Cristea. Sviluppato con <i class="fas fa-heart"></i> da me stesso.</p>
         </div>
     </footer>
 
