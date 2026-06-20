@@ -1,400 +1,657 @@
 <!DOCTYPE html>
 <html lang="it">
 <head>
-    <meta name="google-site-verification" content="23E_81X6WA9zN56B26ADy-_FuvZEG9pYd23JsRr5iLw" />
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Raul Gabriel Cristea - Front-End Developer. Creo esperienze web moderne e coinvolgenti con HTML, CSS e JavaScript.">
-    <meta name="keywords" content="front-end developer, web developer, portfolio, HTML, CSS, JavaScript">
-    <meta name="author" content="Raul Gabriel Cristea">
-    <meta name="theme-color" content="#0f172a">
-    <meta name="color-scheme" content="light dark">
-    <title>Raul Gabriel Cristea - Front-End Developer</title>
-    <link rel="icon" type="image/svg+xml" href="favicon.svg">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Raul Gabriel Cristea — Web Designer a Dello, Brescia | Siti WordPress per Piccole Imprese</title>
+<meta name="description" content="Raul Gabriel Cristea, web designer e operatore informatico a Dello (Brescia). Realizzo siti WordPress su misura per piccole imprese, negozi e artigiani della Bassa Bresciana, con grafica curata su Figma e Canva.">
+<meta name="keywords" content="web designer Dello, web designer Brescia, sviluppo siti WordPress Brescia, grafico web Bassa Bresciana, siti web piccole imprese, freelance informatico Dello, creazione sito web negozio, web design Brescia provincia">
+<meta name="author" content="Raul Gabriel Cristea">
+<meta name="robots" content="index, follow">
+<meta name="language" content="Italian">
+<meta name="geo.region" content="IT-BS">
+<meta name="geo.placename" content="Dello, Brescia">
+<link rel="canonical" href="https://raulcristea.it/">
+
+<meta property="og:type" content="profile">
+<meta property="og:title" content="Raul Gabriel Cristea — Web Designer a Dello, Brescia">
+<meta property="og:description" content="Siti WordPress su misura per piccole imprese della Bassa Bresciana. Design curato, prezzi accessibili.">
+<meta property="og:locale" content="it_IT">
+<meta property="profile:first_name" content="Raul Gabriel">
+<meta property="profile:last_name" content="Cristea">
+
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Raul Gabriel Cristea — Web Designer a Dello, Brescia">
+<meta name="twitter:description" content="Siti WordPress su misura per piccole imprese della Bassa Bresciana.">
+
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' fill='%230d0d0d'/%3E%3Ctext x='50' y='68' font-family='Arial,sans-serif' font-size='52' font-weight='800' fill='%236c63ff' text-anchor='middle'%3ER%3C/text%3E%3C/svg%3E">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Raul Gabriel Cristea",
+  "jobTitle": "Web Designer & Operatore Informatico",
+  "description": "Operatore informatico con focus sulla grafica web. Realizzo siti WordPress su misura per piccole imprese della Bassa Bresciana.",
+  "url": "https://raulcristea.it/",
+  "email": "mailto:cristear117@gmail.com",
+  "telephone": "+393714728731",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Dello",
+    "addressRegion": "Brescia",
+    "addressCountry": "IT"
+  },
+  "knowsLanguage": ["it", "ro", "en"],
+  "knowsAbout": ["WordPress", "HTML", "CSS", "Figma", "Canva", "Web Design", "UI Design"],
+  "alumniOf": {
+    "@type": "EducationalOrganization",
+    "name": "Scuola Bottega"
+  },
+  "sameAs": []
+}
+</script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;700;800&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --c0:#f7f5f0;--c1:#0d0d0d;--c2:#1a1a1a;
+  --cw:#6c63ff;--cw2:#4b44cc;--ca:#ff6b2b;
+  --mid:#6b6b6b;--line:rgba(0,0,0,0.08);
+}
+html{scroll-behavior:smooth}
+body{font-family:'Inter',sans-serif;background:var(--c0);color:var(--c1);overflow-x:hidden;cursor:none}
+.cur{position:fixed;width:10px;height:10px;background:var(--c1);border-radius:50%;pointer-events:none;z-index:9999;transform:translate(-50%,-50%);transition:transform .15s,width .2s,height .2s;top:-20px;left:-20px}
+.cur.big{width:40px;height:40px;background:transparent;border:1.5px solid var(--c1)}
+nav{position:fixed;top:0;left:0;right:0;z-index:100;display:flex;align-items:center;justify-content:space-between;padding:2rem 3rem}
+.logo{font-family:'Syne',sans-serif;font-weight:800;font-size:1.1rem;letter-spacing:.2em;text-transform:uppercase;color:var(--c1);text-decoration:none}
+.nav-links{display:flex;gap:2.5rem;list-style:none}
+.nav-links a{font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;color:var(--mid);text-decoration:none;transition:color .2s;position:relative}
+.nav-links a:hover{color:var(--c1)}
+.nav-links a.active{color:var(--c1)}
+.nav-links a.active::after{content:'';position:absolute;left:0;right:0;bottom:-6px;height:2px;background:var(--cw)}
+.nav-phone{font-family:'Syne',sans-serif;font-weight:700;font-size:.8rem;color:var(--c1);text-decoration:none;letter-spacing:.05em;border-bottom:1px solid currentColor;padding-bottom:1px}
+.burger{display:none;flex-direction:column;gap:5px;background:none;border:none;cursor:none;z-index:200;padding:.5rem}
+.burger span{width:24px;height:2px;background:var(--c1);transition:all .25s}
+.burger.open span:nth-child(1){transform:translateY(7px) rotate(45deg)}
+.burger.open span:nth-child(2){opacity:0}
+.burger.open span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
+.mobile-menu{position:fixed;top:0;right:0;height:100vh;width:78%;max-width:320px;background:var(--c1);z-index:150;display:flex;flex-direction:column;justify-content:center;gap:2rem;padding:2rem 3rem;transform:translateX(100%);transition:transform .35s cubic-bezier(.4,0,.2,1)}
+.mobile-menu.open{transform:translateX(0)}
+.mobile-menu a{font-family:'Syne',sans-serif;font-weight:700;font-size:1.3rem;color:var(--c0);text-decoration:none;letter-spacing:-.01em}
+.mobile-menu .mm-phone{margin-top:1rem;font-family:'Inter',sans-serif;font-weight:400;font-size:.85rem;color:rgba(255,255,255,.5)}
+.menu-overlay{position:fixed;inset:0;background:rgba(0,0,0,.4);z-index:140;opacity:0;pointer-events:none;transition:opacity .3s}
+.menu-overlay.open{opacity:1;pointer-events:auto}
+
+/* SCROLL ANIMATIONS */
+.fade-up{opacity:0;transform:translateY(36px);transition:opacity .7s cubic-bezier(.4,0,.2,1),transform .7s cubic-bezier(.4,0,.2,1)}
+.fade-up.visible{opacity:1;transform:translateY(0)}
+
+/* BACK TO TOP */
+.back-top{position:fixed;bottom:2rem;right:2rem;width:48px;height:48px;border-radius:50%;background:var(--c1);color:var(--c0);border:none;display:flex;align-items:center;justify-content:center;font-size:1.1rem;cursor:none;z-index:90;opacity:0;pointer-events:none;transition:opacity .3s,background .2s;font-family:'Syne',sans-serif}
+.back-top.show{opacity:1;pointer-events:auto}
+.back-top:hover{background:var(--cw)}
+
+/* PORTFOLIO */
+.portfolio{padding:8rem 3rem;background:#fff}
+.pf-grid{display:grid;grid-template-columns:1fr 1fr;gap:2rem}
+.pf-card{border:1px solid var(--line);overflow:hidden;background:var(--c0);transition:transform .3s}
+.pf-card:hover{transform:translateY(-6px)}
+.pf-img{aspect-ratio:16/10;background:linear-gradient(135deg,#1a1a1a,#3a3a3a);display:flex;align-items:center;justify-content:center;position:relative;overflow:hidden}
+.pf-img-placeholder{font-family:'Syne',sans-serif;font-weight:700;font-size:.78rem;letter-spacing:.12em;text-transform:uppercase;color:rgba(255,255,255,.4);text-align:center;padding:2rem}
+.pf-body{padding:2rem}
+.pf-tag{font-size:.65rem;letter-spacing:.16em;text-transform:uppercase;color:var(--cw);font-weight:700;margin-bottom:.6rem}
+.pf-title{font-family:'Syne',sans-serif;font-weight:800;font-size:1.3rem;margin-bottom:.7rem;color:var(--c1)}
+.pf-desc{font-size:.85rem;line-height:1.7;color:var(--mid)}
+.pf-card.soon{display:flex;align-items:center;justify-content:center;flex-direction:column;gap:1rem;padding:3rem;border-style:dashed}
+.pf-soon-txt{font-family:'Syne',sans-serif;font-weight:700;font-size:.85rem;letter-spacing:.1em;text-transform:uppercase;color:var(--mid);text-align:center}
+.hero{min-height:100vh;display:grid;grid-template-rows:1fr auto;padding:0 3rem;background:var(--c0);position:relative;overflow:hidden}
+.hero-main{display:flex;flex-direction:column;justify-content:flex-end;padding-bottom:4rem;padding-top:9rem}
+.hero-sup{font-size:.7rem;letter-spacing:.22em;text-transform:uppercase;color:var(--mid);display:flex;align-items:center;gap:1rem;margin-bottom:2rem}
+.hero-sup::before{content:'';width:32px;height:1px;background:var(--mid)}
+.hero-h1{font-family:'Syne',sans-serif;font-weight:800;font-size:clamp(4rem,10vw,8.5rem);line-height:.88;letter-spacing:-.03em;color:var(--c1)}
+.hero-h1 .stroke{-webkit-text-stroke:2px var(--c1);color:transparent}
+.hero-h1 .accent{color:var(--cw)}
+.hero-bottom{display:flex;align-items:flex-end;justify-content:space-between;padding:2rem 0 3rem;border-top:1px solid var(--line)}
+.hero-desc{max-width:380px;font-size:.95rem;line-height:1.7;color:var(--mid)}
+.hero-actions{display:flex;gap:1rem;align-items:center}
+.btn{font-family:'Syne',sans-serif;font-weight:700;font-size:.75rem;letter-spacing:.12em;text-transform:uppercase;padding:1rem 2rem;text-decoration:none;display:inline-block;transition:all .2s}
+.btn-fill{background:var(--c1);color:var(--c0)}
+.btn-fill:hover{background:var(--cw2);color:#fff}
+.btn-outline{border:1.5px solid var(--c1);color:var(--c1)}
+.btn-outline:hover{background:var(--c1);color:var(--c0)}
+.hero-badge{text-align:right}
+.hero-badge .num{font-family:'Syne',sans-serif;font-weight:800;font-size:3rem;line-height:1;color:var(--c1)}
+.hero-badge .sub{font-size:.68rem;letter-spacing:.1em;text-transform:uppercase;color:var(--mid);margin-top:.4rem}
+.vline{position:absolute;top:0;bottom:0;width:1px;background:var(--line);pointer-events:none}
+.vl1{left:33.3%}.vl2{left:66.6%}
+.marquee-wrap{background:var(--c1);padding:.9rem 0;overflow:hidden;white-space:nowrap}
+.marquee-track{display:inline-flex;animation:marquee 22s linear infinite}
+.marquee-item{font-family:'Syne',sans-serif;font-size:.72rem;font-weight:700;letter-spacing:.22em;text-transform:uppercase;color:var(--c0);padding:0 2rem}
+.dot{color:var(--cw)}
+@keyframes marquee{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+
+/* SKILL SECTION */
+.servizi{padding:8rem 3rem;background:var(--c0)}
+.section-header{display:flex;align-items:flex-end;justify-content:space-between;margin-bottom:5rem;padding-bottom:2rem;border-bottom:1px solid var(--line)}
+.section-label{font-size:.68rem;letter-spacing:.22em;text-transform:uppercase;color:var(--mid);margin-bottom:.5rem}
+.section-title{font-family:'Syne',sans-serif;font-weight:800;font-size:clamp(2.5rem,5vw,4rem);letter-spacing:-.02em;line-height:1}
+.section-count{font-family:'Syne',sans-serif;font-weight:800;font-size:5rem;color:var(--line);line-height:1}
+.servizi-list{display:grid;grid-template-columns:repeat(3,1fr);gap:0;border:1px solid var(--line)}
+.serv{padding:3rem 2.5rem;border-right:1px solid var(--line);border-bottom:1px solid var(--line);transition:background .3s;position:relative;overflow:hidden}
+.serv:nth-child(3n){border-right:none}
+.serv:nth-last-child(-n+3){border-bottom:none}
+.serv::after{content:'';position:absolute;left:0;bottom:0;width:0;height:2px;background:var(--cw);transition:width .4s cubic-bezier(.4,0,.2,1)}
+.serv:hover::after{width:100%}
+.serv:hover{background:#fff}
+.serv-icon{font-size:1.4rem;margin-bottom:1.5rem}
+.serv-title{font-family:'Syne',sans-serif;font-weight:800;font-size:1.4rem;letter-spacing:-.01em;margin-bottom:1rem;color:var(--c1)}
+.serv-desc{font-size:.85rem;line-height:1.7;color:var(--mid)}
+
+/* CHI SONO */
+.wake{display:grid;grid-template-columns:1fr 1fr;background:var(--c1);color:var(--c0);min-height:80vh}
+.wake-left{padding:6rem 3rem;display:flex;flex-direction:column;justify-content:space-between;border-right:1px solid rgba(255,255,255,0.06)}
+.wake-tag{font-size:.68rem;letter-spacing:.22em;text-transform:uppercase;color:rgba(255,255,255,.35);margin-bottom:3rem}
+.wake-title{font-family:'Syne',sans-serif;font-weight:800;font-size:clamp(3rem,5vw,5rem);line-height:.9;letter-spacing:-.03em;margin-bottom:2.5rem}
+.wake-title em{font-style:italic;color:var(--cw)}
+.wake-body{font-size:.95rem;line-height:1.75;color:rgba(255,255,255,.55);max-width:420px;margin-bottom:3rem}
+.quote{border-top:1px solid rgba(255,255,255,0.1);padding-top:2rem;font-size:1rem;font-style:italic;line-height:1.65;color:rgba(255,255,255,.6)}
+.quote cite{display:block;margin-top:.8rem;font-style:normal;font-size:.7rem;letter-spacing:.1em;text-transform:uppercase;color:rgba(255,255,255,.25)}
+.wake-right{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:2rem;padding:6rem 3rem}
+.wake-stat{text-align:center}
+.ws-num{font-family:'Syne',sans-serif;font-weight:800;font-size:5.5rem;line-height:1;color:var(--cw)}
+.ws-label{font-size:.7rem;letter-spacing:.18em;text-transform:uppercase;color:rgba(255,255,255,.35);margin-top:.4rem}
+.wake-divider{width:1px;height:60px;background:rgba(255,255,255,.08)}
+.wake-cta{display:inline-block;font-family:'Syne',sans-serif;font-weight:700;font-size:.75rem;letter-spacing:.15em;text-transform:uppercase;color:var(--c1);background:var(--cw);padding:1.2rem 2.5rem;text-decoration:none;transition:background .2s}
+.wake-cta:hover{background:#fff}
+
+/* FORMAZIONE / ESPERIENZA */
+.orari{display:grid;grid-template-columns:1fr 1fr;background:#fff}
+.orari-left{padding:6rem 3rem;border-right:1px solid var(--line)}
+.orari-right{padding:6rem 3rem}
+.orari-title{font-family:'Syne',sans-serif;font-weight:800;font-size:3rem;letter-spacing:-.02em;line-height:1;margin-bottom:3rem}
+.ora-row{display:flex;justify-content:space-between;align-items:flex-start;padding:1.4rem 0;border-bottom:1px solid var(--line);font-size:.9rem;gap:1rem}
+.ora-day{color:var(--mid);flex-shrink:0}
+.ora-time{font-weight:500;color:var(--c1);font-family:'Syne',sans-serif;text-align:right}
+.ora-badge{display:inline-block;font-size:.6rem;letter-spacing:.1em;text-transform:uppercase;background:var(--cw);color:#fff;padding:.25rem .6rem;margin-left:.6rem}
+.info-block{padding:2rem;border:1px solid var(--line);margin-bottom:1.5rem}
+.ib-label{font-size:.65rem;letter-spacing:.18em;text-transform:uppercase;color:var(--mid);margin-bottom:.6rem}
+.ib-value{font-family:'Syne',sans-serif;font-weight:700;font-size:1.05rem;color:var(--c1);line-height:1.4}
+.ib-value a{color:inherit;text-decoration:none}
+.ib-value a:hover{color:var(--cw)}
+
+/* STRUMENTI */
+.recensioni{padding:8rem 3rem;background:var(--c0)}
+.rev-header{display:flex;align-items:flex-end;gap:4rem;margin-bottom:5rem;padding-bottom:3rem;border-bottom:1px solid var(--line)}
+.rev-big{font-family:'Syne',sans-serif;font-weight:800;font-size:clamp(5rem,10vw,8rem);line-height:1;color:var(--c1);letter-spacing:-.05em}
+.rev-big span{color:var(--cw)}
+.rev-meta .stars{font-size:1.1rem;letter-spacing:.12em;color:var(--ca);margin-bottom:.4rem}
+.rev-meta .count{font-size:.8rem;color:var(--mid);letter-spacing:.05em}
+.rev-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:0;border:1px solid var(--line)}
+.rev-card{padding:2.5rem;border-right:1px solid var(--line);background:#fff;transition:background .2s}
+.rev-card:last-child{border-right:none}
+.rev-card:hover{background:var(--c0)}
+.rev-top{display:flex;align-items:center;gap:.9rem;margin-bottom:1.5rem}
+.rev-av{width:44px;height:44px;border-radius:50%;background:var(--cw);display:flex;align-items:center;justify-content:center;font-size:.85rem;font-weight:700;color:#fff;font-family:'Syne',sans-serif;flex-shrink:0}
+.rev-name{font-size:.9rem;font-weight:700;color:var(--c1);font-family:'Syne',sans-serif}
+.rev-when{font-size:.72rem;color:var(--mid);margin-top:.15rem}
+.rev-text{font-size:.85rem;line-height:1.7;color:var(--mid)}
+.tool-tag{display:inline-block;font-family:'Syne',sans-serif;font-size:.7rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;border:1px solid var(--line);padding:.4rem .9rem;margin-top:1rem;margin-right:.4rem;color:var(--mid)}
+
+/* CONTATTI */
+.contact{display:grid;grid-template-columns:1fr 1fr;background:var(--c1);color:var(--c0);min-height:60vh}
+.contact-left{padding:6rem 3rem;border-right:1px solid rgba(255,255,255,.06);display:flex;flex-direction:column;justify-content:space-between}
+.ct-title{font-family:'Syne',sans-serif;font-weight:800;font-size:clamp(2.5rem,4vw,3.5rem);letter-spacing:-.03em;line-height:.95;margin-bottom:3rem}
+.ct-grid{display:grid;grid-template-columns:1fr 1fr;gap:1.5rem}
+.ct-item .lbl{font-size:.62rem;letter-spacing:.18em;text-transform:uppercase;color:rgba(255,255,255,.3);margin-bottom:.4rem}
+.ct-item .val{font-size:.9rem;color:rgba(255,255,255,.8);line-height:1.5}
+.ct-item .val a{color:inherit;text-decoration:none}
+.ct-item .val a:hover{color:var(--cw)}
+.ct-links{display:flex;flex-wrap:wrap;gap:.8rem;margin-top:3rem}
+.ct-fb{display:inline-flex;align-items:center;gap:.6rem;font-family:'Syne',sans-serif;font-weight:700;font-size:.75rem;letter-spacing:.12em;text-transform:uppercase;color:var(--c0);border:1px solid rgba(255,255,255,.2);padding:.9rem 1.8rem;text-decoration:none;transition:all .2s}
+.ct-fb:hover{background:var(--cw);border-color:var(--cw)}
+
+/* FORM CONTATTO */
+.contact-right{background:#111;display:flex;align-items:center;justify-content:center;flex-direction:column;padding:4rem;position:relative;overflow:hidden}
+.form-wrap{width:100%;max-width:420px}
+.form-title{font-family:'Syne',sans-serif;font-weight:800;font-size:1.3rem;letter-spacing:-.01em;color:#fff;margin-bottom:2rem}
+.form-group{margin-bottom:1.2rem}
+.form-group label{display:block;font-size:.62rem;letter-spacing:.18em;text-transform:uppercase;color:rgba(255,255,255,.3);margin-bottom:.5rem}
+.form-group input,
+.form-group textarea{width:100%;background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.1);color:#fff;font-family:'Inter',sans-serif;font-size:.9rem;padding:.9rem 1rem;outline:none;transition:border-color .2s;resize:none}
+.form-group input:focus,
+.form-group textarea:focus{border-color:var(--cw)}
+.form-group textarea{height:110px}
+.form-submit{width:100%;font-family:'Syne',sans-serif;font-weight:700;font-size:.75rem;letter-spacing:.12em;text-transform:uppercase;background:var(--cw);color:#fff;border:none;padding:1.1rem 2rem;cursor:none;transition:background .2s;margin-top:.5rem}
+.form-submit:hover{background:var(--cw2)}
+.form-msg{display:none;margin-top:1rem;font-size:.8rem;color:var(--cw);letter-spacing:.05em}
+
+footer{display:flex;justify-content:space-between;align-items:center;padding:2rem 3rem;background:var(--c0);border-top:1px solid var(--line);font-size:.7rem;letter-spacing:.1em;text-transform:uppercase;color:var(--mid)}
+footer .logo-f{font-family:'Syne',sans-serif;font-weight:800;font-size:.9rem;color:var(--c1);letter-spacing:.18em}
+
+@media(max-width:900px){
+  nav{padding:1.5rem}.nav-links{display:none}.hero{padding:0 1.5rem}
+  .burger{display:flex}
+  .hero-bottom{flex-direction:column;align-items:flex-start;gap:1.5rem}
+  .servizi{padding:5rem 1.5rem}.servizi-list{grid-template-columns:1fr}
+  .serv{border-right:none}.serv:nth-last-child(-n+3){border-bottom:1px solid var(--line)}.serv:last-child{border-bottom:none}
+  .wake{grid-template-columns:1fr}.wake-right{padding:3rem 1.5rem;border-top:1px solid rgba(255,255,255,.06)}
+  .orari{grid-template-columns:1fr}.orari-left{border-right:none;border-bottom:1px solid var(--line);padding:4rem 1.5rem}.orari-right{padding:4rem 1.5rem}
+  .recensioni{padding:5rem 1.5rem}.rev-grid{grid-template-columns:1fr}.rev-card{border-right:none;border-bottom:1px solid var(--line)}.rev-card:last-child{border-bottom:none}
+  .portfolio{padding:5rem 1.5rem}.pf-grid{grid-template-columns:1fr}
+  .contact{grid-template-columns:1fr}.contact-right{padding:3rem 1.5rem}.contact-left{padding:4rem 1.5rem}.ct-grid{grid-template-columns:1fr}
+  footer{flex-direction:column;gap:1rem;padding:2rem 1.5rem}
+  .section-header{flex-direction:column;align-items:flex-start;gap:1rem}
+  .rev-header{flex-direction:column;gap:1.5rem}
+  .back-top{right:1.2rem;bottom:1.2rem;width:42px;height:42px}
+}
+</style>
 </head>
 <body>
-    <!-- NAVBAR -->
-    <nav class="navbar">
-        <div class="nav-container">
-            <a href="#home" class="logo">
-                <span class="logo-bracket">&lt;</span>
-                <span class="logo-text">Raul</span>
-                <span class="logo-bracket">/&gt;</span>
-            </a>
-            <div class="nav-links">
-                <a href="#about" class="nav-link">Chi Sono</a>
-                <a href="#skills" class="nav-link">Competenze</a>
-                <a href="#projects" class="nav-link">Progetti</a>
-                <a href="#contact" class="nav-link">Contatti</a>
-            </div>
-            <div class="nav-actions">
-                <button class="theme-btn" id="themeBtn" aria-label="Toggle theme">
-                    <i class="fas fa-moon"></i>
-                </button>
-                <button class="menu-btn" id="menuBtn" aria-label="Menu">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </button>
-            </div>
-        </div>
-    </nav>
+<div class="cur" id="cur"></div>
 
-    <!-- MOBILE MENU -->
-    <div class="mobile-menu" id="mobileMenu">
-        <a href="#about" class="mobile-link">Chi Sono</a>
-        <a href="#skills" class="mobile-link">Competenze</a>
-        <a href="#projects" class="mobile-link">Progetti</a>
-        <a href="#contact" class="mobile-link">Contatti</a>
+<nav>
+  <a href="#" class="logo">RGC</a>
+  <ul class="nav-links" id="nav-links">
+    <li><a href="#skill" data-section="skill">Skill</a></li>
+    <li><a href="#chi-sono" data-section="chi-sono">Chi sono</a></li>
+    <li><a href="#percorso" data-section="percorso">Percorso</a></li>
+    <li><a href="#strumenti" data-section="strumenti">Strumenti</a></li>
+    <li><a href="#portfolio" data-section="portfolio">Portfolio</a></li>
+    <li><a href="#contact" data-section="contact">Contatti</a></li>
+  </ul>
+  <a href="tel:3714728731" class="nav-phone">371 472 8731</a>
+  <button class="burger" id="burger" aria-label="Apri menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<div class="menu-overlay" id="menu-overlay"></div>
+<div class="mobile-menu" id="mobile-menu">
+  <a href="#skill">Skill</a>
+  <a href="#chi-sono">Chi sono</a>
+  <a href="#percorso">Percorso</a>
+  <a href="#strumenti">Strumenti</a>
+  <a href="#portfolio">Portfolio</a>
+  <a href="#contact">Contatti</a>
+  <div class="mm-phone">371 472 8731<br>cristear117@gmail.com</div>
+</div>
+
+<section class="hero">
+  <div class="vline vl1"></div>
+  <div class="vline vl2"></div>
+  <div class="hero-main">
+    <div class="hero-sup">Web Designer · Dello, Brescia</div>
+    <h1 class="hero-h1">
+      <span class="stroke">RAUL</span><br>
+      <span>GABRIEL</span><br>
+      <span class="accent">CRISTEA</span>
+    </h1>
+  </div>
+  <div class="hero-bottom">
+    <p class="hero-desc">Operatore informatico con occhio per il design. Creo siti web curati per piccole imprese che vogliono una presenza online professionale, senza spendere una fortuna.</p>
+    <div class="hero-actions">
+      <a href="#skill" class="btn btn-fill">Le mie skill</a>
+      <a href="#contact" class="btn btn-outline">Scrivimi</a>
     </div>
+    <div class="hero-badge">
+      <div class="num">20</div>
+      <div class="sub">Anni · Luglio 2025</div>
+    </div>
+  </div>
+</section>
 
-    <main>
-        <!-- HERO SECTION -->
-        <section id="home" class="hero">
-            <div class="stars"></div>
-            <div class="container">
-                <div class="hero-content">
-                    <span class="hero-badge">👋 Benvenuto!</span>
-                    <h1 class="hero-title">
-                        Ciao, sono <span class="gradient-text">Raul</span>
-                        <br>Front-End Developer
-                    </h1>
-                    <p class="hero-subtitle">Trasformo idee in esperienze web straordinarie. Specializzato in design responsivo, animazioni fluide e UX moderna.</p>
-                    <div class="hero-cta">
-                        <a href="#projects" class="btn btn-primary">
-                            Vedi i Miei Progetti
-                            <i class="fas fa-arrow-right"></i>
-                        </a>
-                        <a href="#contact" class="btn btn-secondary">
-                            Contattami
-                        </a>
-                    </div>
-                    <div class="hero-socials">
-                        <a href="https://github.com" target="_blank" class="social-link" aria-label="GitHub">
-                            <i class="fab fa-github"></i>
-                        </a>
-                        <a href="https://linkedin.com" target="_blank" class="social-link" aria-label="LinkedIn">
-                            <i class="fab fa-linkedin"></i>
-                        </a>
-                        <a href="https://instagram.com/raul.cristeaa" target="_blank" class="social-link" aria-label="Instagram">
-                            <i class="fab fa-instagram"></i>
-                        </a>
-                    </div>
-                </div>
-                <div class="hero-visual">
-                    <div class="code-window">
-                        <div class="window-header">
-                            <span></span><span></span><span></span>
-                        </div>
-                        <div class="window-content">
-                            <pre><code><span class="code-tag">&lt;div&gt;</span>
-  <span class="code-attr">class</span>=<span class="code-string">"developer"</span>
-  <span class="code-attr">skills</span>=<span class="code-string">"HTML CSS JS"</span>
-  <span class="code-attr">passion</span>=<span class="code-string">"∞"</span>
-<span class="code-tag">&gt;</span>
-<span class="code-tag">&lt;/div&gt;</span></code></pre>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+<div class="marquee-wrap">
+  <div class="marquee-track">
+    <span class="marquee-item">WordPress</span><span class="marquee-item dot">●</span>
+    <span class="marquee-item">HTML & CSS</span><span class="marquee-item dot">●</span>
+    <span class="marquee-item">Figma</span><span class="marquee-item dot">●</span>
+    <span class="marquee-item">Canva</span><span class="marquee-item dot">●</span>
+    <span class="marquee-item">UI Design</span><span class="marquee-item dot">●</span>
+    <span class="marquee-item">Piccole Imprese</span><span class="marquee-item dot">●</span>
+    <span class="marquee-item">Dello BS</span><span class="marquee-item dot">●</span>
+    <span class="marquee-item">WordPress</span><span class="marquee-item dot">●</span>
+    <span class="marquee-item">HTML & CSS</span><span class="marquee-item dot">●</span>
+    <span class="marquee-item">Figma</span><span class="marquee-item dot">●</span>
+    <span class="marquee-item">Canva</span><span class="marquee-item dot">●</span>
+    <span class="marquee-item">UI Design</span><span class="marquee-item dot">●</span>
+    <span class="marquee-item">Piccole Imprese</span><span class="marquee-item dot">●</span>
+    <span class="marquee-item">Dello BS</span><span class="marquee-item dot">●</span>
+  </div>
+</div>
 
-        <!-- ABOUT SECTION -->
-        <section id="about" class="about">
-            <div class="container">
-                <h2 class="section-title">Chi Sono</h2>
-                <div class="about-grid">
-                    <div class="about-text">
-                        <p>Sono Raul Gabriel Cristea, un Front-End Developer appassionato di creare interfacce web moderne e intuitive. Con una solida formazione professionale e esperienza in progetti reali, porto idee grafiche a vita attraverso codice pulito e performance ottimali.</p>
-                        <p>La mia specialità è trasformare design complessi in componenti web responsivi, mantenendo sempre l'attenzione verso l'esperienza utente e le best practices di sviluppo.</p>
-                        <div class="about-highlights">
-                            <div class="highlight-item">
-                                <i class="fas fa-check"></i>
-                                <span>Sviluppo Web Responsive</span>
-                            </div>
-                            <div class="highlight-item">
-                                <i class="fas fa-check"></i>
-                                <span>Animazioni Fluide</span>
-                            </div>
-                            <div class="highlight-item">
-                                <i class="fas fa-check"></i>
-                                <span>UX/UI Driven</span>
-                            </div>
-                            <div class="highlight-item">
-                                <i class="fas fa-check"></i>
-                                <span>Performance Optimization</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="about-stats">
-                        <div class="stat-card">
-                            <h3>3+</h3>
-                            <p>Anni di Formazione</p>
-                        </div>
-                        <div class="stat-card">
-                            <h3>10+</h3>
-                            <p>Progetti Completati</p>
-                        </div>
-                        <div class="stat-card">
-                            <h3>100%</h3>
-                            <p>Soddisfazione Client</p>
-                        </div>
-                        <div class="stat-card">
-                            <h3>∞</h3>
-                            <p>Passione</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+<section class="servizi fade-up" id="skill">
+  <div class="section-header">
+    <div>
+      <div class="section-label">Cosa so fare</div>
+      <h2 class="section-title">LE MIE SKILL</h2>
+    </div>
+    <div class="section-count">06</div>
+  </div>
+  <div class="servizi-list">
+    <div class="serv">
+      <div class="serv-icon">🎨</div>
+      <div class="serv-title">Web Design</div>
+      <p class="serv-desc">Ho un occhio naturale per la grafica e la composizione visiva. Progetto siti che non solo funzionano, ma che fanno anche una bella impressione.</p>
+    </div>
+    <div class="serv">
+      <div class="serv-icon">💻</div>
+      <div class="serv-title">HTML & CSS</div>
+      <p class="serv-desc">Codifico layout responsive e animazioni da zero. Ogni dettaglio visivo — spaziature, colori, tipografia — è sotto controllo.</p>
+    </div>
+    <div class="serv">
+      <div class="serv-icon">🔧</div>
+      <div class="serv-title">WordPress</div>
+      <p class="serv-desc">Sviluppo e personalizzo siti WordPress adatti a chi non è esperto di tecnologia. Semplici da gestire, belli da vedere.</p>
+    </div>
+    <div class="serv">
+      <div class="serv-icon">✏️</div>
+      <div class="serv-title">Prototipazione UI</div>
+      <p class="serv-desc">Prima di scrivere una riga di codice, progetto interfacce su Figma per definire layout, flussi e look&feel insieme al cliente.</p>
+    </div>
+    <div class="serv">
+      <div class="serv-icon">📱</div>
+      <div class="serv-title">Design Responsive</div>
+      <p class="serv-desc">Ogni progetto che realizzo funziona perfettamente su mobile, tablet e desktop. Nessun compromesso sulla resa su piccolo schermo.</p>
+    </div>
+    <div class="serv">
+      <div class="serv-icon">🤝</div>
+      <div class="serv-title">Piccole Imprese</div>
+      <p class="serv-desc">Mi rivolgo a negozi, artigiani e attività locali della Bassa Bresciana che vogliono una presenza online curata, senza pagare i prezzi di una grande agenzia.</p>
+    </div>
+  </div>
+</section>
 
-        <!-- SKILLS SECTION -->
-        <section id="skills" class="skills">
-            <div class="container">
-                <h2 class="section-title">Competenze</h2>
-                <div class="skills-grid">
-                    <div class="skill-category">
-                        <h3><i class="fas fa-code"></i> Frontend</h3>
-                        <div class="skill-tags">
-                            <span class="skill-tag">HTML5</span>
-                            <span class="skill-tag">CSS3</span>
-                            <span class="skill-tag">JavaScript ES6+</span>
-                            <span class="skill-tag">Responsive Design</span>
-                            <span class="skill-tag">Flexbox & Grid</span>
-                            <span class="skill-tag">Web APIs</span>
-                        </div>
-                    </div>
-                    <div class="skill-category">
-                        <h3><i class="fas fa-tools"></i> Tools & Frameworks</h3>
-                        <div class="skill-tags">
-                            <span class="skill-tag">Git & GitHub</span>
-                            <span class="skill-tag">VS Code</span>
-                            <span class="skill-tag">WordPress</span>
-                            <span class="skill-tag">DevTools</span>
-                            <span class="skill-tag">Figma</span>
-                            <span class="skill-tag">npm</span>
-                        </div>
-                    </div>
-                    <div class="skill-category">
-                        <h3><i class="fas fa-rocket"></i> Performance & Optimization</h3>
-                        <div class="skill-tags">
-                            <span class="skill-tag">SEO Optimization</span>
-                            <span class="skill-tag">Page Speed</span>
-                            <span class="skill-tag">Accessibility (A11y)</span>
-                            <span class="skill-tag">Mobile First</span>
-                            <span class="skill-tag">Web Vitals</span>
-                            <span class="skill-tag">Lazy Loading</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+<div class="wake fade-up" id="chi-sono">
+  <div class="wake-left">
+    <div>
+      <div class="wake-tag">Chi sono</div>
+      <h2 class="wake-title">GIOVANE,<br><em>curioso.</em></h2>
+      <p class="wake-body">Ho 20 anni, vengo da Dello in provincia di Brescia e mi sono appassionato al mondo del web design fin dalla scuola. Parlo italiano, rumeno (madrelingua) e inglese a buon livello. Quello che mi distingue non è solo la tecnica — è l'attenzione al dettaglio visivo. Per me un sito deve essere bello prima di tutto, poi funzionale.</p>
+      <p class="wake-body" style="margin-top:1rem">Ho già realizzato il sito per una macelleria del mio paese e sto cercando altre piccole realtà locali a cui dare una presenza online che faccia davvero la differenza.</p>
+    </div>
+    <blockquote class="quote">
+      "Imparo ogni giorno qualcosa di nuovo. Per me il web design non è solo un lavoro — è il modo in cui mi esprimo."
+      <cite>Raul Gabriel Cristea</cite>
+    </blockquote>
+  </div>
+  <div class="wake-right">
+    <div class="wake-stat">
+      <div class="ws-num">~1</div>
+      <div class="ws-label">Anno di esperienza pratica</div>
+    </div>
+    <div class="wake-divider"></div>
+    <div class="wake-stat">
+      <div class="ws-num">3</div>
+      <div class="ws-label">Lingue parlate</div>
+    </div>
+    <div class="wake-divider"></div>
+    <div class="wake-stat">
+      <div class="ws-num">1</div>
+      <div class="ws-label">Progetto reale completato</div>
+    </div>
+    <div class="wake-divider"></div>
+    <a href="#contact" class="wake-cta">Lavoriamo insieme →</a>
+  </div>
+</div>
 
-        <!-- PROJECTS SECTION -->
-        <section id="projects" class="projects">
-            <div class="container">
-                <h2 class="section-title">Progetti in Evidenza</h2>
-                <div class="projects-grid">
-                    <div class="project-card">
-                        <div class="project-image">
-                            <i class="fas fa-globe"></i>
-                        </div>
-                        <div class="project-content">
-                            <h3>Macelleria Dotti Paolo</h3>
-                            <p>Sito vetrina professionale con blog integrato, ottimizzato per SEO e mobile responsiveness.</p>
-                            <div class="project-tech">
-                                <span>HTML5</span>
-                                <span>CSS3</span>
-                                <span>WordPress</span>
-                            </div>
-                            <a href="https://www.macelleriadottipaolo.com/" target="_blank" class="project-link">
-                                Visita <i class="fas fa-external-link-alt"></i>
-                            </a>
-                        </div>
-                    </div>
+<div class="orari fade-up" id="percorso">
+  <div class="orari-left">
+    <h2 class="orari-title">PERCORSO</h2>
+    <div class="ora-row">
+      <span class="ora-day">2021 – 2022</span>
+      <span class="ora-time">Stage — 2ª Superiore <span class="ora-badge">~3 mesi</span></span>
+    </div>
+    <div class="ora-row">
+      <span class="ora-day">2022 – 2023</span>
+      <span class="ora-time">Stage — 3ª Superiore <span class="ora-badge">~3 mesi</span></span>
+    </div>
+    <div class="ora-row">
+      <span class="ora-day">2023 – 2024</span>
+      <span class="ora-time">Stage — 4ª Superiore <span class="ora-badge">~3 mesi</span></span>
+    </div>
+    <div class="ora-row">
+      <span class="ora-day">2024</span>
+      <span class="ora-time">Sito macelleria locale <span class="ora-badge">progetto reale</span></span>
+    </div>
+    <div class="ora-row">
+      <span class="ora-day">Ora</span>
+      <span class="ora-time">Aperto a collaborazioni freelance e opportunità di lavoro</span>
+    </div>
+    <p style="margin-top:2rem;font-size:.75rem;color:var(--mid);line-height:1.6">Disponibile sia per collaborazioni freelance con piccole imprese, sia per posizioni lavorative o stage nel settore.</p>
+  </div>
+  <div class="orari-right">
+    <div class="info-block">
+      <div class="ib-label">Formazione</div>
+      <div class="ib-value">Scuola Bottega — 4ª Superiore<br><span style="font-size:.82rem;font-weight:400;color:var(--mid)">Diploma in operatore informatico</span></div>
+    </div>
+    <div class="info-block">
+      <div class="ib-label">Esperienza totale</div>
+      <div class="ib-value">Circa 1 anno<br><span style="font-size:.82rem;font-weight:400;color:var(--mid)">Accumulata attraverso 3 stage scolastici</span></div>
+    </div>
+    <div class="info-block">
+      <div class="ib-label">Lingue</div>
+      <div class="ib-value">Italiano · Rumeno (madrelingua)<br><span style="font-size:.82rem;font-weight:400;color:var(--mid)">Inglese — livello buono</span></div>
+    </div>
+    <div class="info-block">
+      <div class="ib-label">Disponibilità</div>
+      <div class="ib-value">Freelance & Lavoro dipendente<br><span style="font-size:.82rem;font-weight:400;color:var(--mid)">Dello (BS) e dintorni · da remoto</span></div>
+    </div>
+  </div>
+</div>
 
-                    <div class="project-card">
-                        <div class="project-image">
-                            <i class="fas fa-shopping-cart"></i>
-                        </div>
-                        <div class="project-content">
-                            <h3>E-Commerce Landing</h3>
-                            <p>Landing page interattiva con carousel prodotti, filtri dinamici e checkout ottimizzato.</p>
-                            <div class="project-tech">
-                                <span>HTML5</span>
-                                <span>CSS3</span>
-                                <span>JavaScript</span>
-                            </div>
-                            <a href="#" class="project-link">
-                                Vedi Progetto <i class="fas fa-external-link-alt"></i>
-                            </a>
-                        </div>
-                    </div>
-
-                    <div class="project-card">
-                        <div class="project-image">
-                            <i class="fas fa-tasks"></i>
-                        </div>
-                        <div class="project-content">
-                            <h3>Task Manager App</h3>
-                            <p>Web app per gestione task con localStorage, drag-and-drop e filtri dinamici.</p>
-                            <div class="project-tech">
-                                <span>HTML5</span>
-                                <span>CSS3</span>
-                                <span>JavaScript</span>
-                            </div>
-                            <a href="#" class="project-link">
-                                Vedi Progetto <i class="fas fa-external-link-alt"></i>
-                            </a>
-                        </div>
-                    </div>
-
-                    <div class="project-card">
-                        <div class="project-image">
-                            <i class="fas fa-image"></i>
-                        </div>
-                        <div class="project-content">
-                            <h3>Gallery Fotografica</h3>
-                            <p>Galleria interattiva con lightbox, filtri categoria e transizioni fluide.</p>
-                            <div class="project-tech">
-                                <span>HTML5</span>
-                                <span>CSS3</span>
-                                <span>JavaScript</span>
-                            </div>
-                            <a href="#" class="project-link">
-                                Vedi Progetto <i class="fas fa-external-link-alt"></i>
-                            </a>
-                        </div>
-                    </div>
-
-                    <div class="project-card">
-                        <div class="project-image">
-                            <i class="fas fa-film"></i>
-                        </div>
-                        <div class="project-content">
-                            <h3>Streaming Platform</h3>
-                            <p>UI di piattaforma streaming con carousel responsivo e player video customizzato.</p>
-                            <div class="project-tech">
-                                <span>HTML5</span>
-                                <span>CSS3</span>
-                                <span>JavaScript</span>
-                            </div>
-                            <a href="#" class="project-link">
-                                Vedi Progetto <i class="fas fa-external-link-alt"></i>
-                            </a>
-                        </div>
-                    </div>
-
-                    <div class="project-card">
-                        <div class="project-image">
-                            <i class="fas fa-palette"></i>
-                        </div>
-                        <div class="project-content">
-                            <h3>Portfolio Moderno</h3>
-                            <p>Portfolio personale con tema dark/light, animazioni avanzate e performance ottimale.</p>
-                            <div class="project-tech">
-                                <span>HTML5</span>
-                                <span>CSS3</span>
-                                <span>JavaScript</span>
-                            </div>
-                            <a href="#" class="project-link">
-                                Vedi Progetto <i class="fas fa-external-link-alt"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- EXPERIENCE SECTION -->
-        <section class="experience">
-            <div class="container">
-                <h2 class="section-title">Il Mio Percorso</h2>
-                <div class="timeline">
-                    <div class="timeline-item">
-                        <div class="timeline-date">2021 - 2024</div>
-                        <div class="timeline-content">
-                            <h3>Diploma Operatore Informatico</h3>
-                            <p class="location">Bottega Artigiani</p>
-                            <p>Percorso formativo specializzato in sviluppo web frontend, con focus su HTML5, CSS3, JavaScript moderno e responsive design.</p>
-                        </div>
-                    </div>
-                    <div class="timeline-item">
-                        <div class="timeline-date">Giugno - Agosto 2023</div>
-                        <div class="timeline-content">
-                            <h3>Stage Professionale</h3>
-                            <p class="location">ZAG Comunicazione SRL</p>
-                            <p>Prima esperienza in agenzia digitale. Ho appreso metodologie professionali, gestione progetti e collaborazione team.</p>
-                        </div>
-                    </div>
-                    <div class="timeline-item">
-                        <div class="timeline-date">Giugno - Agosto 2024</div>
-                        <div class="timeline-content">
-                            <h3>Stage Avanzato</h3>
-                            <p class="location">Floow Agency</p>
-                            <p>Esperienza in agenzia all'avanguardia con progetti internazionali. Ho consolidato competenze frontend e best practices di sviluppo.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- CONTACT SECTION -->
-        <section id="contact" class="contact">
-            <div class="container">
-                <h2 class="section-title">Mettiamoci in Contatto</h2>
-                <div class="contact-content">
-                    <div class="contact-info">
-                        <h3>Contattami</h3>
-                        <p>Hai un progetto in mente? Contattami e parliamone!</p>
-                        <div class="contact-methods">
-                            <a href="mailto:cristear117@gmail.com" class="contact-method">
-                                <i class="fas fa-envelope"></i>
-                                <span>cristear117@gmail.com</span>
-                            </a>
-                            <a href="https://wa.me/39XXXXXXXXX" target="_blank" class="contact-method">
-                                <i class="fab fa-whatsapp"></i>
-                                <span>WhatsApp</span>
-                            </a>
-                            <a href="https://www.linkedin.com" target="_blank" class="contact-method">
-                                <i class="fab fa-linkedin"></i>
-                                <span>LinkedIn</span>
-                            </a>
-                            <a href="https://github.com" target="_blank" class="contact-method">
-                                <i class="fab fa-github"></i>
-                                <span>GitHub</span>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="contact-cta">
-                        <a href="mailto:cristear117@gmail.com" class="btn btn-primary btn-large">
-                            Inviami un'Email
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <!-- BACK TO TOP BUTTON -->
-    <button class="back-to-top" id="backToTop" aria-label="Back to top">
-        <i class="fas fa-arrow-up"></i>
-    </button>
-
-    <!-- CUSTOM CURSOR -->
-    <div class="cursor" id="cursor"></div>
-    <div class="cursor-follower" id="cursorFollower"></div>
-
-    <!-- FOOTER -->
-    <footer class="footer">
-        <div class="container">
-            <p>&copy; 2025 Raul Gabriel Cristea. Sviluppato con <i class="fas fa-heart"></i> da me stesso.</p>
+<section class="recensioni fade-up" id="strumenti">
+  <div class="rev-header">
+    <h2 class="rev-big">GLI<br><span>STRUMENTI</span></h2>
+    <div class="rev-meta">
+      <div class="count" style="font-size:.9rem;max-width:320px;line-height:1.6">Gli strumenti che uso ogni giorno per progettare, sviluppare e consegnare siti che fanno colpo.</div>
+    </div>
+  </div>
+  <div class="rev-grid">
+    <div class="rev-card">
+      <div class="rev-top">
+        <div class="rev-av">Fi</div>
+        <div>
+          <div class="rev-name">Figma</div>
+          <div class="rev-when">Design & Prototipazione</div>
         </div>
-    </footer>
+      </div>
+      <p class="rev-text">Il punto di partenza di ogni progetto. Su Figma definisco layout, palette colori e componenti prima di passare allo sviluppo. Condivido facilmente i prototipi con i clienti per raccogliere feedback.</p>
+      <span class="tool-tag">UI Design</span>
+      <span class="tool-tag">Wireframe</span>
+      <span class="tool-tag">Prototipo</span>
+    </div>
+    <div class="rev-card">
+      <div class="rev-top">
+        <div class="rev-av">WP</div>
+        <div>
+          <div class="rev-name">WordPress</div>
+          <div class="rev-when">Sviluppo siti web</div>
+        </div>
+      </div>
+      <p class="rev-text">La piattaforma principale per i siti dei clienti. Personalizzo temi, creo layout custom con CSS e consegno siti facili da aggiornare in autonomia, senza bisogno di un tecnico.</p>
+      <span class="tool-tag">CMS</span>
+      <span class="tool-tag">Temi Custom</span>
+      <span class="tool-tag">CSS</span>
+    </div>
+    <div class="rev-card">
+      <div class="rev-top">
+        <div class="rev-av">Cv</div>
+        <div>
+          <div class="rev-name">Canva</div>
+          <div class="rev-when">Grafica & Comunicazione</div>
+        </div>
+      </div>
+      <p class="rev-text">Uso Canva per materiali grafici rapidi: post social, brochure, loghi iniziali. Perfetto per chi ha bisogno di contenuti visivi coerenti senza tempi lunghi di produzione.</p>
+      <span class="tool-tag">Social Media</span>
+      <span class="tool-tag">Grafica</span>
+      <span class="tool-tag">Branding</span>
+    </div>
+  </div>
+</section>
 
-    <script src="script.js"></script>
+<section class="portfolio fade-up" id="portfolio">
+  <div class="section-header">
+    <div>
+      <div class="section-label">Lavori realizzati</div>
+      <h2 class="section-title">PORTFOLIO</h2>
+    </div>
+    <div class="section-count">01</div>
+  </div>
+  <div class="pf-grid">
+    <div class="pf-card">
+      <div class="pf-img">
+        <div class="pf-img-placeholder">📷<br>Foto del progetto<br>in arrivo</div>
+      </div>
+      <div class="pf-body">
+        <div class="pf-tag">WordPress · CSS</div>
+        <div class="pf-title">Sito web — Macelleria locale</div>
+        <p class="pf-desc">Sito vetrina completo per un'attività di macelleria del mio paese: presentazione prodotti, orari, contatti e localizzazione. Realizzato dall'idea al rilascio, dal design su Figma allo sviluppo su WordPress.</p>
+      </div>
+    </div>
+    <div class="pf-card soon">
+      <div style="font-size:2rem">✦</div>
+      <div class="pf-soon-txt">Il prossimo progetto<br>potrebbe essere il tuo</div>
+    </div>
+  </div>
+</section>
+
+<div class="contact fade-up" id="contact">
+  <div class="contact-left">
+    <div>
+      <h2 class="ct-title">SCRIVIMI<br>O CHIAMAMI</h2>
+      <div class="ct-grid">
+        <div class="ct-item">
+          <div class="lbl">Email</div>
+          <div class="val"><a href="mailto:cristear117@gmail.com">cristear117@gmail.com</a></div>
+        </div>
+        <div class="ct-item">
+          <div class="lbl">Telefono</div>
+          <div class="val"><a href="tel:3714728731">371 472 8731</a></div>
+        </div>
+        <div class="ct-item">
+          <div class="lbl">Sede</div>
+          <div class="val">Dello (BS)<br>Provincia di Brescia</div>
+        </div>
+        <div class="ct-item">
+          <div class="lbl">Disponibilità</div>
+          <div class="val">Freelance · Lavoro · Stage</div>
+        </div>
+      </div>
+    </div>
+    <div class="ct-links">
+      <a href="#" target="_blank" class="ct-fb">LinkedIn →</a>
+      <a href="#" target="_blank" class="ct-fb">GitHub →</a>
+    </div>
+  </div>
+  <div class="contact-right">
+    <div class="form-wrap">
+      <div class="form-title">Inviami un messaggio</div>
+      <div class="form-group">
+        <label>Il tuo nome</label>
+        <input type="text" id="f-nome" placeholder="Mario Rossi">
+      </div>
+      <div class="form-group">
+        <label>Email</label>
+        <input type="email" id="f-email" placeholder="mario@esempio.it">
+      </div>
+      <div class="form-group">
+        <label>Messaggio</label>
+        <textarea id="f-msg" placeholder="Raccontami del tuo progetto..."></textarea>
+      </div>
+      <button class="form-submit" onclick="inviaForm()">Invia messaggio →</button>
+      <div class="form-msg" id="form-msg">✓ Messaggio inviato! Ti rispondo presto.</div>
+    </div>
+  </div>
+</div>
+
+<button class="back-top" id="back-top" aria-label="Torna su">↑</button>
+
+<footer>
+  <span class="logo-f">RGC</span>
+  <span>© 2025 · Raul Gabriel Cristea</span>
+  <span>Dello (BS) · 371 472 8731</span>
+</footer>
+
+<script>
+const cur=document.getElementById('cur');
+document.addEventListener('mousemove',e=>{cur.style.left=e.clientX+'px';cur.style.top=e.clientY+'px'});
+document.querySelectorAll('a,button,.serv,.rev-card').forEach(el=>{
+  el.addEventListener('mouseenter',()=>cur.classList.add('big'));
+  el.addEventListener('mouseleave',()=>cur.classList.remove('big'));
+});
+
+function inviaForm(){
+  const nome=document.getElementById('f-nome').value.trim();
+  const email=document.getElementById('f-email').value.trim();
+  const msg=document.getElementById('f-msg').value.trim();
+  const emailRegex=/^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  if(!nome||!email||!msg){alert('Compila tutti i campi prima di inviare.');return;}
+  if(!emailRegex.test(email)){alert('Inserisci un indirizzo email valido.');return;}
+  // Simulazione invio — collega a un servizio come Formspree o EmailJS
+  document.getElementById('form-msg').style.display='block';
+  document.getElementById('f-nome').value='';
+  document.getElementById('f-email').value='';
+  document.getElementById('f-msg').value='';
+}
+
+/* MENU HAMBURGER MOBILE */
+const burger=document.getElementById('burger');
+const mobileMenu=document.getElementById('mobile-menu');
+const menuOverlay=document.getElementById('menu-overlay');
+function closeMenu(){
+  burger.classList.remove('open');
+  mobileMenu.classList.remove('open');
+  menuOverlay.classList.remove('open');
+}
+burger.addEventListener('click',()=>{
+  burger.classList.toggle('open');
+  mobileMenu.classList.toggle('open');
+  menuOverlay.classList.toggle('open');
+});
+menuOverlay.addEventListener('click',closeMenu);
+mobileMenu.querySelectorAll('a').forEach(a=>a.addEventListener('click',closeMenu));
+
+/* SEZIONE ATTIVA NELLA NAV */
+const navLinks=document.querySelectorAll('#nav-links a');
+const sections=Array.from(navLinks).map(a=>document.getElementById(a.dataset.section)).filter(Boolean);
+function updateActiveNav(){
+  let current=null;
+  sections.forEach(sec=>{
+    const rect=sec.getBoundingClientRect();
+    if(rect.top<=120 && rect.bottom>=120) current=sec.id;
+  });
+  navLinks.forEach(a=>a.classList.toggle('active',a.dataset.section===current));
+}
+
+/* FADE-IN ALLO SCROLL */
+const fadeEls=document.querySelectorAll('.fade-up');
+const fadeObserver=new IntersectionObserver((entries)=>{
+  entries.forEach(entry=>{
+    if(entry.isIntersecting){
+      entry.target.classList.add('visible');
+      fadeObserver.unobserve(entry.target);
+    }
+  });
+},{threshold:0.15});
+fadeEls.forEach(el=>fadeObserver.observe(el));
+
+/* BOTTONE TORNA SU */
+const backTop=document.getElementById('back-top');
+function updateBackTop(){
+  if(window.scrollY>600) backTop.classList.add('show');
+  else backTop.classList.remove('show');
+}
+backTop.addEventListener('click',()=>window.scrollTo({top:0,behavior:'smooth'}));
+
+window.addEventListener('scroll',()=>{
+  updateActiveNav();
+  updateBackTop();
+});
+updateActiveNav();
+updateBackTop();
+</script>
 </body>
 </html>
